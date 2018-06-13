@@ -1,0 +1,8 @@
+za\co\brian\restservice\H2DatabaseInitializer.class
+za\co\brian\restservice\service\EntityService.class
+za\co\brian\restservice\controller\EntityController.class
+za\co\brian\restservice\model\Cic.class
+za\co\brian\restservice\model\Entity.class
+za\co\brian\restservice\repository\EntityRepository.class
+za\co\brian\restservice\RestServiceApplication.class
+za\co\brian\restservice\repository\CicRepository.class

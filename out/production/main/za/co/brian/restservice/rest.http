@@ -1,0 +1,59 @@
+### Get all movies
+
+GET http://localhost:8080/api/v1/movies
+Content-Type: application/json
+
+### Get one entity
+
+GET http://localhost:8080/api/v1/movies/1
+Content-Type: application/json
+
+### Add a new entity
+
+POST http://localhost:8080/api/v1/movies/
+Content-Type: application/json
+
+{
+    "name": "Terminator",
+    "year": 1984
+}
+
+### Add a new cic to the entity
+
+POST http://localhost:8080/api/v1/movies/2/cics
+Content-Type: application/json
+
+{
+    "comment" : "Test comment 123!"
+}
+
+### Update entity
+
+PUT http://localhost:8080/api/v1/movies/3
+Content-Type: application/json
+
+{
+    "name": "Game Plan, The (updated)",
+    "year": 1996
+}
+
+### Update cic
+
+PUT http://localhost:8080/api/v1/movies/1/cics/2
+Content-Type: application/json
+
+{
+    "comment": "Updated cic."
+}
+
+### Delte entity
+
+DELETE http://localhost:8080/api/v1/movies/1
+Content-Type: application/json
+
+### Delete cic
+
+DELETE http://localhost:8080/api/v1/movies/1/cics/1
+Content-Type: application/json
+
+###

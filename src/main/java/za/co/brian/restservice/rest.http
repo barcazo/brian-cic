@@ -1,0 +1,69 @@
+
+###Get all cics
+GET http://localhost:8080/cic
+Content-Type: application/json
+
+### Get one entity
+
+GET http://localhost:8080/cic/1
+Content-Type: application/json
+
+### Add a new entity
+
+POST http://localhost:8080/cic/entity
+Content-Type: application/json
+
+{
+    "name": "restful-service",
+    "email": "chief@brian.co.za"
+}
+
+### Add a new cic to the entity
+
+POST http://localhost:8080/cic/2/cic
+Content-Type: application/json
+
+{
+	"cicType": "eoh-cic2",
+	"subject": "Java Assessment",
+	"body": "EOH Senior Java Assessment",
+	"sourceSystem": "DB2",
+	"cicTimestamp" : "2018-06-10"
+
+}
+
+### Update entity
+
+PUT http://localhost:8080/cic/4
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "eoh1-cic",
+    "email": "cfa@brian.co.za"
+}
+
+### Update cic
+
+PUT http://localhost:8080/cic/1/cic/2
+Content-Type: application/json
+
+{
+	"cicType": "eoh-cic-assessment",
+	"subject": "Java Assessment",
+	"body": "EOH Senior Java Assessment",
+	"sourceSystem": "DB23",
+	"cicTimestamp" : "2018-06-10"
+}
+
+### Delete entity
+
+DELETE http://localhost:8080/cic/4
+Content-Type: application/json
+
+### Delete cic
+
+DELETE http://localhost:8080/cic/1/cic/2
+Content-Type: application/json
+
+###
