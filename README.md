@@ -24,8 +24,8 @@ This is a Spring Boot Maven app showing how to build a simple RESTful Web Servic
 
 Import the Maven project straight to your Java IDE:
 - Intellij IDEA
-
-_(OPTIONAL) To work with other RDBMS you need to configure the project 'application.properties' file match to your database URL, username, password and add a required Maven dependency._
+- Build Project using mvn clean install
+- Run Spring Boot using mvn spring-boot:run
 
 # License
 Copyright 2018 BrianC
